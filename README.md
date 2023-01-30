@@ -1,5 +1,11 @@
 # create-svelte
 
+## Sobre
+
+Projeto criado usando o Sveltekit e seguindo o tutorial [Curso Intensivo de Svelte - Aprenda SvelteJS em 1 Vídeo](https://www.youtube.com/watch?v=SVNTizLyuvo)
+
+---
+
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ## Creating a project
