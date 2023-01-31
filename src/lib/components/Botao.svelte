@@ -5,7 +5,7 @@
 	export let operacao = false;
 	export let destaque = false;
 
-	export let onClick = (valor) => {};
+	export let onClick;
 </script>
 
 <button
