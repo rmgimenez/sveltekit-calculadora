@@ -4,9 +4,7 @@
 	export let duplo = false;
 	export let operacao = false;
 	export let destaque = false;
-	/**
-	 * @type {(arg0: string) => any}
-	 */
+
 	export let onClick = () => {};
 </script>
 
