@@ -5,9 +5,6 @@
 
 	let valor = 0;
 
-	/**
-	 * @param {any} numero
-	 */
 	function numeroDigitado(numero) {
 		valor += numero;
 	}
