@@ -1,18 +1,29 @@
 <script>
 	import Botao from './Botao.svelte';
 	import Linha from './Linha.svelte';
+	import Tela from './Tela.svelte';
+
+	let valor = 0;
+
+	/**
+	 * @param {any} numero
+	 */
+	function numeroDigitado(numero) {
+		valor += numero;
+	}
 </script>
 
 <div class="calculadora">
+	<Tela {valor} />
 	<Linha>
 		<Botao texto="AC" triplo destaque />
 		<Botao texto="/" operacao />
 	</Linha>
 	<Linha>
-		<Botao texto="7" />
-		<Botao texto="8" />
-		<Botao texto="9" />
-		<Botao texto="*" operacao />
+		<Botao onClick={numeroDigitado} texto="7" />
+		<Botao onClick={numeroDigitado} texto="8" />
+		<Botao onClick={numeroDigitado} texto="9" />
+		<Botao onClick={numeroDigitado} texto="*" operacao />
 	</Linha>
 	<Linha>
 		<Botao texto="4" />
@@ -36,7 +47,7 @@
 <style>
 	.calculadora {
 		background-color: var(--cor-fundo);
-		height: 220px;
+		height: 140px;
 		width: 150px;
 		display: flex;
 		flex-direction: column;

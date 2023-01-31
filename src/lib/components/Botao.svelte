@@ -4,9 +4,22 @@
 	export let duplo = false;
 	export let operacao = false;
 	export let destaque = false;
+	/**
+	 * @type {(arg0: string) => any}
+	 */
+	export let onClick = () => {};
 </script>
 
-<button class="botao" class:triplo class:duplo class:operacao class:destaque>{texto}</button>
+<button
+	class="botao"
+	on:click={() => onClick(texto)}
+	class:triplo
+	class:duplo
+	class:operacao
+	class:destaque
+>
+	{texto}</button
+>
 
 <style>
 	.botao {

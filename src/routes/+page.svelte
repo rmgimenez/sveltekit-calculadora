@@ -14,6 +14,7 @@
 <style>
 	:global(body) {
 		background-color: black;
+		font-family: 'Roboto', sans-serif;
 	}
 	:root {
 		--cor-fundo: #555;
